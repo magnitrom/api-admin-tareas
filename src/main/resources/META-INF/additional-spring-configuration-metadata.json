@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "apitask.app.package.entities",
+    "type": "java.lang.String",
+    "description": "A description for 'candidates.app.package.entities'"
+  },
+  {
+    "name": "apitask.app.security.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.app.security.jwtSecret'"
+  },
+  {
+    "name": "apitask.app.package.entities",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.app.package.entities'"
+  },
+  {
+    "name": "apitask.app.controller.path.whitelist",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.app.controller.path.whitelist'"
+  },
+  {
+    "name": "apitask.security.user.name",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.security.user.name'"
+  },
+  {
+    "name": "apitask.security.user.role",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.security.user.role'"
+  },
+  {
+    "name": "apitask.security.user.password",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.security.user.password'"
+  },
+  {
+    "name": "apitask.state.id.initial",
+    "type": "java.lang.String",
+    "description": "A description for 'apitask.state.id.initial'"
+  }
+]}
