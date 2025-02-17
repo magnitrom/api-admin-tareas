@@ -35,7 +35,7 @@ public class UsuariosDto {
 			@NotNull(message = "El usuario no puede ser nulo.") @NotBlank(message = "El usuario no puede estar vacío.") String usuario,
 			@NotNull(message = "El nombre no puede ser nulo.") @NotBlank(message = "El nombre no puede estar vacío.") String nombre,
 			@Email(message = "El correo debe ser válido") @NotNull(message = "El correo no puede ser nulo.") @NotBlank(message = "El correo no puede estar vacío.") String correoElectronico,
-			@NotNull(message = "La contraseña no puede ser nulo.") @NotBlank(message = "La contraseña no puede estar vacía.") @Size(min = 4, max = 50, message = "La contraseña debe tener como mínimo 4 caracteres.") String contrasenia,
+			@NotNull(message = "La contraseña no puede ser nulo.") @NotBlank(message = "La contraseña no puede estar vacía.") @Size(min = 1, max = 50, message = "La contraseña debe tener como mínimo 4 caracteres.") String contrasenia,
 			Date fechaCreacion,
 			@NotNull(message = "El usuario no puede ser nulo.") @NotBlank(message = "El usuario no puede estar vacío.") String usuarioCreacion) {
 		super();
@@ -53,11 +53,11 @@ public class UsuariosDto {
 	private Long idUsuarios;
     @NotNull(message = "El usuario no puede ser nulo.")
     @NotBlank(message = "El usuario no puede estar vacío.")
-    @Size(min = 4, max = 45, message = "El usuario debe tener como mínimo 4 caracteres y máximo 45 caracteres.")
+    @Size(min = 1, max = 45, message = "El usuario debe tener como mínimo 4 caracteres y máximo 45 caracteres.")
 	private String usuario;
     @NotNull(message = "El nombre no puede ser nulo.")
     @NotBlank(message = "El nombre no puede estar vacío.")
-    @Size(min = 5, max = 60, message = "El usuario debe tener como mínimo 5 caracteres y máximo 60 caracteres.")
+    @Size(min = 1, max = 60, message = "El usuario debe tener como mínimo 5 caracteres y máximo 60 caracteres.")
 	private String nombre;
 	@Email(message = "El correo debe ser válido")
     @NotNull(message = "El correo no puede ser nulo.")
@@ -66,7 +66,7 @@ public class UsuariosDto {
 	private String correoElectronico;
     @NotNull(message = "La contraseña no puede ser nulo.")
     @NotBlank(message = "La contraseña no puede estar vacía.")
-    @Size(min = 4, max = 60, message = "La contraseña debe tener como mínimo 4 caracteres y máximo 60 caracteres.")
+    @Size(min = 1, max = 60, message = "La contraseña debe tener como mínimo 4 caracteres y máximo 60 caracteres.")
 	private String contrasenia;
 	private Date fechaCreacion;
     @NotNull(message = "El usuario no puede ser nulo.")
